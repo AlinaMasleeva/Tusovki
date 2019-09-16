@@ -27,12 +27,11 @@ body {
     height: 32rem;
   }
   .carousel-item > img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    height: 32rem;
-  }
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
   
   
   /* MARKETING CONTENT
@@ -50,7 +49,45 @@ body {
     margin-right: .75rem;
     margin-left: .75rem;
   }
+
+  .marketing-col {
+    height: 15rem;
+  }
+
+  .marketing-col .marketing-col-img {
+      position: relative;
+      width: 100%;
+      height: 100%;
+  }
   
+  .marketing-col-img img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+  }
+  .marketing-col-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    overflow: hidden;
+    padding-top: 10%;
+}
+  .marketing-col-img::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background-color: rgba(23,23,23,.5);
+  }
+
   
   /* Featurettes
   ------------------------- */
