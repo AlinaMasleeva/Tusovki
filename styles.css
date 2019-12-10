@@ -7,7 +7,12 @@ body {
     padding-bottom: 3rem;
     color: #5a5a5a;
   }
-  
+  .bg-dark {
+    background-color: #272725!important;
+  }
+  .navbar-brand-logo {
+    max-width: 10em;
+  }
   
   /* CUSTOMIZE THE CAROUSEL
   -------------------------------------------------- */
@@ -30,7 +35,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: top;
+    object-position: center;
 }
   
   
@@ -73,21 +78,21 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 0;
     color: #fff;
+    background-color: rgba(23,23,23,.7);
     overflow: hidden;
-    padding-top: 10%;
-}
-  .marketing-col-img::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      background-color: rgba(23,23,23,.5);
+    -webkit-transition: height 1s; /* Safari */
+    transition: height 1s;
+    transition-timing-function: ease;
+    -webkit-transition-timing-function: ease;
   }
-
+  .marketing-col-text h3 {
+    padding-top: 10%;
+  }
+.marketing-col-img:hover .marketing-col-text {
+  height: 100%;
+}
   
   /* Featurettes
   ------------------------- */
@@ -106,6 +111,12 @@ body {
   
   /* RESPONSIVE CSS
   -------------------------------------------------- */
+  @media only screen and (max-width: 600px) {
+    .marketing-col-img .marketing-col-text {
+      height: 100%;
+      background-color: rgba(23,23,23,.4);
+    }
+  }
   
   @media (min-width: 40em) {
     /* Bump up size of carousel content */

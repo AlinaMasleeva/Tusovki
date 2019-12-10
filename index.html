@@ -4,14 +4,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="Ashy Pro">
-    <title>Carousel Template · Bootstrap</title>
+    <title>Travel Queens</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.ico">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles.css">
 <body>
     <header>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-            <a class="navbar-brand" href="#">Tusovki</a>
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" class="navbar-brand-logo" alt="Travel Queens Logo"/>
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
                 aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -39,14 +44,6 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="./images/carousel-1.jpg" alt="Travel Queens">>
-                    <div class="container">
-                        <div class="carousel-caption text-left">
-                            <h1>Example headline.</h1>
-                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida
-                                at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
-                        </div>
-                    </div>
                 </div>
             </div>
             <!-- <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
@@ -67,40 +64,157 @@
                 <div class="col-lg-4 marketing-col">
                     <div class="marketing-col-img">
                         <img src="./images/img-1.jpg" height="150" alt="Travel Queens">
-                    </div>
-                    <div class="marketing-col-text">
-                        <h3>Saudi prince</h2>
-                        <p>Budget: 3000$ per day</p>
-                        <p>Shopping and presents</p>
-                        <p><a class="btn btn-secondary" href="./tusovka-1.html" role="button">View details »</a></p>
+                        <div class="marketing-col-text">
+                            <h3>Abu Dhabi</h2>
+                            <p>Budget: 1000$ clean per day
+                                2000$ extra</p>
+                            <p>Shopping and presents <span>&#127873;</span></p>
+                            <button class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal" role="button">View details »</button>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <img src="./images/img-2.jpg" height="150" alt="Travel Queens">
-                    <h3>Sheikh Mansour</h2>
-                    <p>City: Abu Dhabi</p>
-                    <p>Budget: 1000$ per day</p>
-                    <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+                <div class="col-lg-4 marketing-col">
+                    <div class="marketing-col-img">
+                        <img src="./images/img-2.jpg" height="150" alt="Travel Queens">
+                        <div class="marketing-col-text">
+                            <h3>Prince Saudi</h2>
+                                <p>Budget: 2500$ per day</p>
+                                <p>Shopping and expensive presents</p>
+                            <button class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal" role="button">View details »</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-4">
-                    <svg class="bd-placeholder-img" height="150" preserveAspectRatio="xMidYMid slice"
-                        focusable="false" role="img" aria-label="Placeholder: 140x140">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#777"></rect>
-                    </svg>
-                    <h3>Heading</h2>
-                    <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula
-                        porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
-                        ut fermentum massa justo sit amet risus.</p>
-                    <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+                <div class="col-lg-4 marketing-col">
+                    <div class="marketing-col-img">
+                        <img src="./images/img-3.jpg" height="150" alt="Travel Queens">
+                        <div class="marketing-col-text">
+                            <h3>Trip to Paris</h2>
+                                <p>Budget: 3000-6000$ per day</p>
+                                <p>1-5 days</p>
+                            <button class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal" role="button">View details »</button>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!-- /.row -->
+            <!-- Second row -->
+            <div class="row">
+                <div class="col-lg-4 marketing-col">
+                    <div class="marketing-col-img">
+                        <img src="./images/img-4.jpg" height="150" alt="Travel Queens">
+                        <div class="marketing-col-text">
+                            <h3>Trip to Italia</h2>
+                            <p>Budget: 3000-5000 per day</p>
+                            <button class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal" role="button">View details »</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 marketing-col">
+                    <div class="marketing-col-img">
+                        <img src="./images/img-5.jpg" height="150" alt="Travel Queens">
+                        <div class="marketing-col-text">
+                            <h3>Trip to Germany</h2>
+                                <p>Budget: 2000-3000$ per da</p>
+                             <button class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal" role="button">View details »</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 marketing-col">
+                    <div class="marketing-col-img">
+                        <img src="./images/img-6.jpg" height="150" alt="Travel Queens">
+                        <div class="marketing-col-text">
+                            <h3>Trip to Europe( Switch)</h2>
+                                <p>Budget: 2000$ per day</p>
+                                <p>Blond with not fat body</p>
+                            <button class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal" role="button">View details »</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- second row end -->
+            <!-- 3rd row -->
+            <div class="row">
+                <div class="col-lg-4 marketing-col">
+                    <div class="marketing-col-img">
+                        <img src="./images/img-7.jpg" height="150" alt="Travel Queens">
+                        <div class="marketing-col-text">
+                            <h3>Trip to Thai</h2>
+                            <p>Budget: 4000 $ for all trip</p>
+                            <p>4 days</p>
+                            <button class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal" role="button">View details »</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 marketing-col">
+                    <div class="marketing-col-img">
+                        <img src="./images/img-8.jpg" height="150" alt="Travel Queens">
+                        <div class="marketing-col-text">
+                            <h3>Chile</h2>
+                                <p>Budget: 2000$ per day</p>
+                                <p>Trip to 7 days</p>
+                            <button class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal" role="button">View details »</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 marketing-col">
+                    <div class="marketing-col-img">
+                        <img src="./images/img-9.jpg" height="150" alt="Travel Queens">
+                        <div class="marketing-col-text">
+                            <h3>Prince of Bahrain</h2>
+                                <p>Budget: 1500$ per day</p>
+                            <button class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal" role="button">View details »</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 3rd row end -->
+            <!-- Four row -->
+            <div class="row">
+                <div class="col-lg-4 marketing-col">
+                    <div class="marketing-col-img">
+                        <img src="./images/img-10.jpg" height="150" alt="Travel Queens">
+                        <div class="marketing-col-text">
+                            <h3>Prince Hazza</h2>
+                            <p>Budget: 500$ per day 2000 extra</p>
+                            <p>7-14 days</p>
+                            <button class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal" role="button">View details »</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 4 row end -->
 
             <hr class="featurette-divider">
 
         </div>
         <!-- /.container -->
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">For more details</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="lead">Contact Us:</p>
+                    <h5>
+                        <span>&#128172;</span> +447341603033
+                        What's up 
+                    </h5>
+                    <h5>
+                        <span>&#128231;</span> trevelqueens.models@gmail.com</h5>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+            </div>
+        </div>
 
         <!-- FOOTER -->
         <footer class="container">
